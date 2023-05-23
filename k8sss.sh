@@ -27,7 +27,7 @@ kubeadm init
 kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 
 kubeadm token create --print-join-command
-  
+kubectl run ngnix --image=ngnix --restart=Never
 
 ------------------------------------------- Worker Node ------------------------------------------------ 
 sudo su
